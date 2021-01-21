@@ -1,0 +1,9 @@
+.box {
+  height: 400px;
+  background-color: #558899;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
