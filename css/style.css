@@ -39,3 +39,10 @@
   border: solid 5px black;
   z-index: 1;
 }
+
+@media (max-width: 576px) {
+  .timeline-pointer::after,
+.timeline-section::after {
+    display: none;
+  }
+}
