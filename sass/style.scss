@@ -1,8 +1,38 @@
 .box{
-    height: 400px;
+    height: 200px;
     background-color: #558899;
 }
 .bg-cover{
     background-size: cover;
     background-position: center center;
+}
+.timeline-section{
+    position: relative;
+}
+.timeline-section:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.timeline-pointer{
+    position: relative;
+}
+.timeline-pointer::after{
+    content: "";
+    position: absolute;
+    // top: 0;
+    // bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: solid 5px black;
+    z-index: 1;
 }
